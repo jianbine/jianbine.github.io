@@ -3,19 +3,19 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hexo博客乱码问题决解方法 | YouMe&#39;s Blog</title>
+  <title>vi/vim删除:一行，一个字符，单词，每行第一个字符 命令 | YouMe&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1、将博客文件保存未UTF-8,用记事本打开后缀未”xxx.md”的博客文件，点击另存为，并把编码改为UTF-82、重新生成，部署">
-<meta name="keywords" content="Hexo">
+  <meta name="description" content="x    删除当前光标下的字符dw    删除光标之后的单词剩余部分d$    删除光标之后的该行的剩余部分dd    删除当前行c    功能和d相同，区别在于完成删除操作后进入INSERT MODEcc    删除当前行，然后进入INSERT MODE :%s/^.//g    删除每行第一个字符摘要:转自http://dsec.pku.edu.cn/~jinlong/vi/Vi.html">
+<meta name="keywords" content="Terminal">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo博客乱码问题决解方法">
-<meta property="og:url" content="JianBine.github.io/2017/05/02/hexo/index.html">
+<meta property="og:title" content="vi&#x2F;vim删除:一行，一个字符，单词，每行第一个字符 命令">
+<meta property="og:url" content="JianBine.github.io/2017/05/03/terminal-vim/index.html">
 <meta property="og:site_name" content="YouMe&#39;s Blog">
-<meta property="og:description" content="1、将博客文件保存未UTF-8,用记事本打开后缀未”xxx.md”的博客文件，点击另存为，并把编码改为UTF-82、重新生成，部署">
-<meta property="og:updated_time" content="2017-05-02T12:10:18.102Z">
+<meta property="og:description" content="x    删除当前光标下的字符dw    删除光标之后的单词剩余部分d$    删除光标之后的该行的剩余部分dd    删除当前行c    功能和d相同，区别在于完成删除操作后进入INSERT MODEcc    删除当前行，然后进入INSERT MODE :%s/^.//g    删除每行第一个字符摘要:转自http://dsec.pku.edu.cn/~jinlong/vi/Vi.html">
+<meta property="og:updated_time" content="2017-05-03T11:00:46.786Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo博客乱码问题决解方法">
-<meta name="twitter:description" content="1、将博客文件保存未UTF-8,用记事本打开后缀未”xxx.md”的博客文件，点击另存为，并把编码改为UTF-82、重新生成，部署">
+<meta name="twitter:title" content="vi&#x2F;vim删除:一行，一个字符，单词，每行第一个字符 命令">
+<meta name="twitter:description" content="x    删除当前光标下的字符dw    删除光标之后的单词剩余部分d$    删除光标之后的该行的剩余部分dd    删除当前行c    功能和d相同，区别在于完成删除操作后进入INSERT MODEcc    删除当前行，然后进入INSERT MODE :%s/^.//g    删除每行第一个字符摘要:转自http://dsec.pku.edu.cn/~jinlong/vi/Vi.html">
   
     <link rel="alternate" href="/atom.xml" title="YouMe&#39;s Blog" type="application/atom+xml">
   
@@ -64,10 +64,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-hexo" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-terminal-vim" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2017/05/02/hexo/" class="article-date">
-  <time datetime="2017-05-02T12:04:43.000Z" itemprop="datePublished">2017-05-02</time>
+    <a href="/2017/05/03/terminal-vim/" class="article-date">
+  <time datetime="2017-05-03T10:55:05.000Z" itemprop="datePublished">2017-05-03</time>
 </a>
     
   </div>
@@ -78,7 +78,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Hexo博客乱码问题决解方法
+      vi/vim删除:一行，一个字符，单词，每行第一个字符 命令
     </h1>
   
 
@@ -86,15 +86,16 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>1、将博客文件保存未UTF-8,用记事本打开后缀未”xxx.md”的博客文件，点击另存为，并把编码改为UTF-8<br>2、重新生成，部署</p>
+        <p>x    删除当前光标下的字符<br>dw    删除光标之后的单词剩余部分<br>d$    删除光标之后的该行的剩余部分<br>dd    删除当前行<br>c    功能和d相同，区别在于完成删除操作后进入INSERT MODE<br>cc    删除当前行，然后进入INSERT MODE</p>
+<h2 id="s-g-删除每行第一个字符"><a href="#s-g-删除每行第一个字符" class="headerlink" title=":%s/^.//g    删除每行第一个字符"></a>:%s/^.//g    删除每行第一个字符</h2><p>摘要:<br>转自<a href="http://dsec.pku.edu.cn/~jinlong/vi/Vi.html" target="_blank" rel="external">http://dsec.pku.edu.cn/~jinlong/vi/Vi.html</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="JianBine.github.io/2017/05/02/hexo/" data-id="cj28vhgk20001o4mk7r1iusnx" class="article-share-link">Share</a>
+      <a data-url="JianBine.github.io/2017/05/03/terminal-vim/" data-id="cj28vhgkd0003o4mkuzphggcb" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Terminal/">Terminal</a></li></ul>
 
     </footer>
   </div>
@@ -102,15 +103,11 @@
     
 <nav id="article-nav">
   
-    <a href="/2017/05/03/hexoToGithub/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          Hexo部署到GitHub上面
-        
-      </div>
-    </a>
   
+    <a href="/2017/05/03/hexoToGithub/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hexo部署到GitHub上面</div>
+    </a>
   
 </nav>
 
