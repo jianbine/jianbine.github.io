@@ -3,14 +3,19 @@
 <head>
   <meta charset="utf-8">
   
-  <title>归档: 2017 | YouMe&#39;s Blog</title>
+  <title>php中curl的使用方法 | YouMe&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="YouMe&#39;s Blog">
-<meta property="og:url" content="JianBine.github.io/archives/2017/index.html">
+  <meta name="description" content="使用CURL的PHP扩展完成一个HTTP请求的发送一般有以下几个步骤：1、初始化连接句柄2、设置CURL选项3、执行并获取结果4、释放CURL连接句柄实现程序片段如下所示：//1.初始化$ch = curl_init();//2.设置选项curl_setopt($ch,CURLOPT_URL,”http://www.baidu.com“);curl_setopt($ch,CURLOPT_RETUR">
+<meta name="keywords" content="php">
+<meta property="og:type" content="article">
+<meta property="og:title" content="php中curl的使用方法">
+<meta property="og:url" content="JianBine.github.io/2017/05/04/php-curl/index.html">
 <meta property="og:site_name" content="YouMe&#39;s Blog">
+<meta property="og:description" content="使用CURL的PHP扩展完成一个HTTP请求的发送一般有以下几个步骤：1、初始化连接句柄2、设置CURL选项3、执行并获取结果4、释放CURL连接句柄实现程序片段如下所示：//1.初始化$ch = curl_init();//2.设置选项curl_setopt($ch,CURLOPT_URL,”http://www.baidu.com“);curl_setopt($ch,CURLOPT_RETUR">
+<meta property="og:updated_time" content="2017-05-04T05:26:05.805Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="YouMe&#39;s Blog">
+<meta name="twitter:title" content="php中curl的使用方法">
+<meta name="twitter:description" content="使用CURL的PHP扩展完成一个HTTP请求的发送一般有以下几个步骤：1、初始化连接句柄2、设置CURL选项3、执行并获取结果4、释放CURL连接句柄实现程序片段如下所示：//1.初始化$ch = curl_init();//2.设置选项curl_setopt($ch,CURLOPT_URL,”http://www.baidu.com“);curl_setopt($ch,CURLOPT_RETUR">
   
     <link rel="alternate" href="/atom.xml" title="YouMe&#39;s Blog" type="application/atom+xml">
   
@@ -59,96 +64,55 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2017/05/04/php-curl/" class="archive-article-date">
-  <time datetime="2017-05-04T05:16:02.000Z" itemprop="datePublished">5月 4</time>
+        <section id="main"><article id="post-php-curl" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/05/04/php-curl/" class="article-date">
+  <time datetime="2017-05-04T05:16:02.000Z" itemprop="datePublished">2017-05-04</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/04/php-curl/">php中curl的使用方法</a>
+    <h1 class="article-title" itemprop="name">
+      php中curl的使用方法
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2017/05/03/terminal-vim/" class="archive-article-date">
-  <time datetime="2017-05-03T10:55:05.000Z" itemprop="datePublished">5月 3</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/03/terminal-vim/">vi/vim删除:一行，一个字符，单词，每行第一个字符 命令</a>
-    </h1>
-  
+        <p>使用CURL的PHP扩展完成一个HTTP请求的发送一般有以下几个步骤：<br>1、初始化连接句柄<br>2、设置CURL选项<br>3、执行并获取结果<br>4、释放CURL连接句柄<br>实现程序片段如下所示：<br>//1.初始化<br>$ch = curl_init();<br>//2.设置选项<br>curl_setopt($ch,CURLOPT_URL,”<a href="http://www.baidu.com" target="_blank" rel="external">http://www.baidu.com</a>“);<br>curl_setopt($ch,CURLOPT_RETURNTRANSFER,1);<br>curl_setopt($ch,CURLOPT_HEADER,0);<br>//3.执行并获取HTML文档内容<br>$output = curl_exec($ch);<br>//4.释放curl句柄</p>
+<h2 id="curl-close-ch"><a href="#curl-close-ch" class="headerlink" title="curl_close($ch);"></a>curl_close($ch);</h2><p>CURLOPT_URL:指定请求的URL<br>CURLOPT_RETURNTRANSFER:设置为1表示稍后执行的curl_exec函数的返回是URL的返回字符串，而不是把返回字符串定向到标准输出并返回TRUE<br>CURLOPT_HEADER:设置为0表示不返回HTTP头部信息</p>
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2017/05/03/hexoToGithub/" class="archive-article-date">
-  <time datetime="2017-05-03T08:53:51.000Z" itemprop="datePublished">5月 3</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/03/hexoToGithub/">Hexo部署到GitHub上面</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2017/05/02/hexo/" class="archive-article-date">
-  <time datetime="2017-05-02T12:04:43.000Z" itemprop="datePublished">5月 2</time>
-</a>
+    </div>
+    <footer class="article-footer">
+      <a data-url="JianBine.github.io/2017/05/04/php-curl/" data-id="cj29yyjtu0001homkm55lc2cd" class="article-share-link">Share</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/02/hexo/">Hexo博客乱码问题决解方法</a>
-    </h1>
-  
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/php/">php</a></li></ul>
 
-    </header>
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2017/05/03/terminal-vim/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">vi/vim删除:一行，一个字符，单词，每行第一个字符 命令</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
 
 </section>
         
